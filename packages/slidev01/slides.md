@@ -5,7 +5,7 @@ theme: seriph
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
 # some information about your slides, markdown enabled
-title: Welcome to Slidev
+title: Welcome to Slidev01
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -24,7 +24,7 @@ transition: slide-left
 mdc: true
 ---
 
-# Welcome to Slidev
+# Welcome to Slidev01
 
 Presentation slides for developers
 
