@@ -9,7 +9,7 @@ info: |
   Presentation slides for developers.
   Learn more at [Sli.dev](https://sli.dev)
 drawings:
-persist: false
+  persist: false
 transition: slide-left
 title: 明日から使えるCSS
 mdc: true
