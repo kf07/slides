@@ -156,8 +156,8 @@ layout: default
 
 
 syntax:　
-`'<color>'`,`'<length>'`, `'<number>'`, `'<percentage>'`などの型を指定することができて、不正な型が変数に代入された場合は初期値を適用する
-`'block | none'`のように特定の値を指定することもできる
+`'<color>'`,`'<length>'`, `'<number>'`, `'<percentage>'`などの型を指定することができて、不正な型が変数に代入された場合は初期値を適用する  
+`'block | none'`のように特定の値を指定することもできる  
 inherits:　継承するかどうか  
 initial-value:　初期値
 
@@ -204,7 +204,7 @@ layout: default
 }
 
 .text1 {
-  --textColor: blue;
+  --text-color: blue;
   color: var(--text-color);
   .text2 {
       color: var(--text-color); //inheritsがtrueの場合はblue、falseの場合は初期値のredが適応される
