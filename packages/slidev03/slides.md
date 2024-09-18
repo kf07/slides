@@ -155,11 +155,11 @@ layout: default
 ```
 
 
-syntax:　
+**syntax**:  
 `'<color>'`,`'<length>'`, `'<number>'`, `'<percentage>'`などの型を指定することができて、不正な型が変数に代入された場合は初期値を適用する  
 `'block | none'`のように特定の値を指定することもできる  
-inherits:　継承するかどうか  
-initial-value:　初期値
+**inherits**:　継承するかどうか  
+**initial-value**:　初期値
 
 ---
 layout: default
