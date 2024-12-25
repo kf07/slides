@@ -16,9 +16,22 @@ mdc: true
 ---
 
 # いい感じに配列操作できるようになろう!
+<div class="img">
+<img src="/javascript.png" alt="javascript" />
+</div>
+
 <style>
 h1 {
   padding-top: 100px;
+}
+img {
+text-align: right;
+width:200px;
+transform: rotate(10deg);
+}
+.img {
+display: flex;
+justify-content: flex-end;
 }
 </style>
 ---
