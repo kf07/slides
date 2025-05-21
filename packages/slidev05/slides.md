@@ -116,8 +116,7 @@ layout: default
 
 ## Vueのいいところ③素のJSより処理がわかりやすい
 - 通常のJSだと　イベントリスナーの登録、DOM操作が必要
-- VueならデータとUIが自動的に同期される  
-https://stackblitz.com/edit/vitejs-vite-u9fmxtab?file=src%2FApp.vue
+- VueならデータとUIが自動的に同期される
 ```html
 HTML,JS
 <input type="text" id="message" />
