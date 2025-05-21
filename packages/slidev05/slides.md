@@ -11,11 +11,14 @@ info: |
 drawings:
   persist: false
 transition: slide-left
-title: Vue3
+title: Vueのいいところ
 mdc: true
 ---
 
-# Vueのハードルを下げたいVue　のいいところ
+# Vueのいいところ
+<div class="img">
+<img src="/vue-logo.svg" alt="javascript" />
+</div>
 
 <style>
 h1 {
@@ -46,7 +49,7 @@ layout: default
 
 ## 🧱 そもそも、なぜフレームワークを使うの？
 
-- 素のJavaScriptだけでもアプリはつくれるれるけど、**設計がバラバラになりやすい**
+- 素のJavaScriptだけでもWebアプリはつくれるれるけど、**設計がバラバラになりやすい**
 - フレームワークを使えば、基本的なルールが決まっているので設計の手助けになる
 - 結果として、
     - **保守性が高くなる**
@@ -59,31 +62,30 @@ layout: default
 layout: default
 ---
 
-## 学習コストが低い
+## Vueのいいところ①学習コストが低い
 
 - テンプレート構文が**HTMLに似ていてわかりやすい**
 - データの表示やイベントもわかりやすい構文で書ける
 - `v-for`, `v-if` など直感的に使える
-- データとUIの表示が直感的
 
 ```vue
+<script setup>
+  import { ref } from 'vue';
+  const count = ref(0);
+</script>
+
 <template>
   <button @click="count++">+1</button>
   <p>{{ count }}</p>
   <p v-if="count > 0">countの値が1以上</p>
 </template>
-
-<script setup>
-import { ref } from 'vue';
-const count = ref(0);
-</script>
 ```
 
 ---
 layout: default
 ---
 
-## 1つのファイルで完結する
+## Vueのいいところ②1つのファイルで完結する
 
 - .vueファイルの中にHTML/JS/CSSが全部書ける
 - コンポーネントごとに処理を分けて管理できる
@@ -112,9 +114,10 @@ counter.vue
 layout: default
 ---
 
-## 素のJSより処理がわかりやすい
+## Vueのいいところ③素のJSより処理がわかりやすい
 - 通常のJSだと　イベントリスナーの登録、DOM操作が必要
-- VueならデータとUIが自動的に同期される
+- VueならデータとUIが自動的に同期される  
+https://stackblitz.com/edit/vitejs-vite-u9fmxtab?file=src%2FApp.vue
 ```html
 HTML,JS
 <input type="text" id="message" />
@@ -127,7 +130,6 @@ HTML,JS
   });
 </script>
 ```
-
 
 ```vue
 Vue
@@ -146,16 +148,24 @@ const message = ref('');
 ---
 layout: default
 ---
+HTML,JS
+https://stackblitz.com/edit/stackblitz-starters-ye96hmdr?file=styles.css,index.html
 
+Vue
+https://stackblitz.com/edit/vitejs-vite-u9fmxtab?file=src%2FApp.vue
 
-## まとめ
-1. 学習コストが低い（構文が直感的）
-2. 1ファイルで完結する（構造が見えやすい）
-3. 素のJSより書きやすい（UIと状態が同期される）
 ---
 layout: default
 ---
 
 
+## まとめ & 個人的に好きなところ
+- データの状態と画面が常に同期するのでDOM操作に気を使う必要がなくなる
+- HTML、CSSをほとんどいつも通り書ける
+- v-modelでのフォーム操作がしやすい
 
-## ご清聴ありがとうございました！
+---
+layout: default
+---
+
+## 少しでもVueのよさが伝わっていたらうれしいです！
